@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "sample-spec-mr"
+  description: "sample-spec-mr"
+  annotations:
+    github.com/project-slug: veecode-homolog/sample-spec-mr
+    backstage.io/techdocs-ref: dir:.
+    github.com/workflows: publish.yml
+    kong-manager/service-name: app.sample-spec-mr.sample-spec-mr-service-0.80
+    kong-manager/instance: /kong-manager/cluster-veecode
+spec:
+  type: devops
+  lifecycle: experimental
+  owner: "group:default/admin"
+  providesApis:
+    - sample-spec-mr
